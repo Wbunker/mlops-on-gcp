@@ -44,8 +44,8 @@ steps:
   dir: $_PIPELINE_FOLDER
 
 options:
-  default_logs_bucket_behavior: REGIONAL_USER_OWNED_BUCKET
-
+  logging: NONE
+  
 # Push the custom image to Container Registry 
 images: ['gcr.io/$PROJECT_ID/$_TFX_IMAGE_NAME:$TAG_NAME']
 
